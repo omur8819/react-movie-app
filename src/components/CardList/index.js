@@ -1,18 +1,18 @@
-import {Card} from "../Card";
-import {StyledCardList} from "./CardList.style"
+import { Card } from "../Card";
+import { StyledCardList } from "./CardList.style"
 
-export const CardList = ({movieList, baseImageUrl}) => {
+export const CardList = ({ movieList, baseImageUrl }) => {
   
     return (
         <StyledCardList>
-           {movieList?.map(
+           { movieList?.map(
                (movie, index) => (
                <Card 
-                key={index} 
-                title={movie.title}
-                imgSrc={baseImageUrl + movie.poster_path}
+                key = { index } 
+                title = { movie.title }
+                imgSrc = { baseImageUrl + movie.poster_path }
                 />)
             )}
         </StyledCardList>
-    )
-}
+    );
+};
